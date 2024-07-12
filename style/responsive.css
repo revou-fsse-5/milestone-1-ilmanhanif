@@ -1,0 +1,190 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1496px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nav-btn2 {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px) {
+    .container {
+        max-width: 768px;
+    }
+
+    /* header section */
+    header {
+        position: fixed;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-menu {
+        top: 38px;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+
+    .nav-btn2 {
+        display: flex;
+        justify-content: center;
+        padding: 1.5em 0;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .hamburger-button {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-menu.hidden,
+    .nav-btn.hidden {
+        display: none;
+    }
+    /* hero section */
+    .hero-title h1 {
+        font-size: 2rem;
+    }
+
+    .hero-title p {
+        font-size: 1rem;
+    }
+
+    /* about section */
+    .information-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .information-card {
+        width: 20em;
+    }
+
+    .information-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .information-card p {
+        font-size: 0.9rem;
+    }
+
+    /* journey-section */
+    .journey-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .journey-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .journey-title h2 {
+        font-size: 2rem;
+    }
+
+    .journey-title p {
+        font-size: 1rem;
+        max-width: 30ch;
+    }
+
+    .journey-title-head p {
+        font-size: 1rem;
+    }
+
+    .journey-title-head h2 {
+        text-align: center;
+        font-size: 2.1rem;
+    }
+
+    .journey-title-text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        max-width: 45ch;
+        padding-bottom: 2em;
+    }
+
+    /* footer section */
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
+    }
+
+    /* journey-section */
+    .journey-card-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .card-1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .card-2 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    .card-3 {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    .card-4 {
+        grid-area: 7 / 1 / 8 / 2;
+    }
+    .title-1 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .title-2 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    .title-3 {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+    .title-4 {
+        grid-area: 8 / 1 / 9 / 2;
+    }
+
+    /* footer-section */
+    .footer-content p,
+    .footer-content li a {
+        font-size: 0.8rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}
