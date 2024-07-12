@@ -12,3 +12,29 @@ ButterKnight is an organization dedicated to enhancing human welfare through a v
 4. Transparency: We conduct each program with transparency and accountability.
 
 ![butterknight.jpg](/images/knighthorse.jpg)
+
+# Deployment Process
+
+### Netlify Sign up process & connect Netlify to Github project
+
+1. At the beginning of the Netlify sign-up process, there is an option to connect with a Github account or with Gmail. In my case, I used Gmail to sign up for my Netlify account.
+
+2. Then, to deploy a Github project to Netlify, you can do it by connecting your Netlify account with your Github account.
+
+### Auto Deployment on Github with Netlify
+
+1. After that, you will choose 'add new site' and select 'import an existing project'.
+
+2. After that, you select the account and repository you want to deploy. You will also choose the site name at this step.
+   ![step1.png](/deployment-images/1.PNG)
+
+### How to connect your custom domain and DNS
+
+1. After that, you will select 'add custom domain' and enter the domain name you have purchased. In my case, I bought a domain named butterknight.site on Niagahoster.
+   ![step2.png](/deployment-images/2.PNG)
+
+2. And then, you will configure DNS by entering the Netlify hostname into the name servers at your domain provider. Then you will wait for the entered DNS to be verified.
+   ![step3.png](/deployment-images/3.PNG)
+
+3. After DNS verification, the domain can be accessed properly.
+   ![step4.png](/deployment-images/4.PNG)
